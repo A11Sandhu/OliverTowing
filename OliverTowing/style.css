@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html, body {
+  width: 100%;
+  min-width: 100%;
+} */
+
+body {
+  font-family: Roboto, sans-serif;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+li i {
+  margin-right: 8px;
+}
+
+/* SHARED UTILITIES */
+
+.hidden {
+  display: none;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.849);
+  height: 102px;
+}
+
+.infoBar {
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 2px;
+  color: mediumspringgreen;
+}
+
+.infoBar a {
+  color: mediumspringgreen;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: mediumspringgreen;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+#menu {
+  margin-right: 5%;
+}
+
+#menu li a {
+  color: mediumspringgreen;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 150ms ease;
+}
+
+#menu li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* HOME SECTION */
+
+#home {
+  /* background-image: url("./images/TowTruck.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-color: #f0f0f0; 
+  background-position: 5% 30%; 
+  width: 100%;
+  height: 75vh; */
+}
+
+.home-img-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 102px;
+}
+
+.home-img-container img {
+  width: 100%;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  background-color: #fff;
+  padding: 0 50px;
+  /* height: 56vh; */
+}
+
+#about p {
+  font-size: larger;
+  text-align: center;
+}
+
+#about p:nth-child(2) {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.go4269172405 {
+  display: none !important;
+}
+
+.tm-widget {
+  padding-bottom: 0 !important;
+}
+
+/* PRODUCT SECTION */
+
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-container {
+  width: 100%;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.product-container div {
+  width: 17%;
+  height: 17%;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-container div img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.expertP {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* LOCATION SECTION */
+
+#location {
+  padding: 0 20px;
+}
+
+#location h1 {
+  margin-bottom: 50px;
+}
+
+#location li {
+  margin-top: 5px;
+  font-size: large;
+}
+
+.iframe-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.location-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.location-content-wrapper div {
+  width: 100%;
+}
+
+.location-services {
+  align-self: center;
+}
+
+.location-services h2 {
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.location-services ul {
+  list-style: disc;
+  margin-left: 30px;
+  display: flex;
+}
+
+.location-services h2 {
+  font-weight: bold;
+  font-size: 1.375rem;
+  text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  margin-bottom: 5rem;
+}
+
+#contact h2 {
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+#contact a {
+  color: black;
+  padding: 2px;
+  text-decoration: underline;
+  transition: color 150ms ease;
+}
+
+#contact a:hover {
+  color: mediumspringgreen;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.contact-img-container {
+  width: 420px;
+  border: 2px solid #000000;
+  border-radius: 5%;
+}
+
+.contact-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.contact-details-container {
+  /* flex: 50%; */
+  text-align: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-details-container h2 {
+  margin-top: 50px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+}
+
+.column {
+  flex: 50%;
+  text-align: center;
+}
+
+.footerList {
+  text-decoration: none;
+  list-style: none;
+  margin: 10;
+  padding: 0;
+}
+
+.footerList li {
+  padding: 5px;
+}
+
+.footerList a {
+  color: black;
+}
+
+.footerList {
+  text-decoration: none;
+  list-style: none;
+  margin: 10;
+  padding: 0;
+}
+
+.footerList li {
+  padding: 5px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+}
+
+.operations div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(
+    to right,
+    rgba(3, 116, 14, 0.637),
+    rgba(0, 99, 38, 0.77)
+  );
+  height: 7vh;
+  text-align: center;
+}
+
+footer p,
+footer a {
+  padding-top: 10px;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+footer a:hover {
+  color: mediumspringgreen;
+}
+
+#mobile-dropdown {
+  display: none;
+}
+
+.fa-bars {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .expertP {
+    font-size: 18px;
+  }
+
+  .product-container div {
+    width: 15%;
+    height: 15%;
+  }
+
+  #location {
+    padding: 0;
+  }
+
+  .location-content-wrapper div {
+    width: unset;
+  }
+
+  .location-content-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .iframe-container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .location-services {
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .location-services h2 {
+    text-align: center;
+  }
+
+  .location-services ul {
+    gap: 100px;
+    list-style: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* HEADER */
+  header {
+    height: 80px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  main {
+    gap: 1.5rem;
+  }
+
+  .fa-bars {
+    width: 100% !important;
+    height: 100% !important;
+    color: white;
+    cursor: pointer;
+    display: block !important;
+  }
+
+  #mobile-dropdown {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    z-index: 20;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 200ms ease-in-out;
+
+  }
+
+  #mobile-dropdown.active {
+    right: 0;
+  }
+
+  .gray {
+    position: fixed;
+    z-index: 10;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .gray.active {
+    display: block;
+  }
+
+  .mobile-menu {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background-color: #F0F0F0;
+    position: absolute;
+    top: 0;
+  }
+
+
+  .close-icon-container {
+    align-self: flex-end;
+  }
+
+  #mobile-dropdown > div ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  #mobile-dropdown > div ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #mobile-dropdown > div div:last-child ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  
+  .fa-close {
+    cursor: pointer;
+  }
+
+  /* HOME */
+
+  .home-img-container {
+    margin-top: 80px;
+  }
+
+  /* ABOUT */
+
+  #about {
+    padding: 0 40px;
+  }
+
+  /* PRODUCTS */
+
+  .expertP {
+    font-size: 1rem;
+  }
+
+  .contact-details-container {
+    display: none;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+}
